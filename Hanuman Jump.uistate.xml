@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2uistate>
+    <!--This is a UI state file - its content describes the user interface settings when the project was last open.
+It is entirely optional and the project will load without it.  If you are placing the project under source control,
+you probably do not want to add any .uistate.xml files to the repository.-->
+    <configurations>
+        <active>
+            <configuration name="HTML5" />
+        </active>
+        <display name="HTML5" />
+    </configurations>
+    <open-tabs>
+        <layout order="2">Layout_Gameplay</layout>
+        <layout order="1">Layout_Guide</layout>
+        <layout order="0">Layout_Shop</layout>
+        <layout order="8">Layout_Restart</layout>
+        <layout order="9">Layout_Start</layout>
+        <event-sheet order="4">Event_Shop</event-sheet>
+        <event-sheet order="3">Event_Gameplay</event-sheet>
+        <event-sheet active="1" order="5">Event_Restart</event-sheet>
+        <event-sheet order="6">Event_Start</event-sheet>
+        <event-sheet order="7">Event_Guide</event-sheet>
+    </open-tabs>
+    <properties>
+        <property expanded="1" name="About" />
+        <property expanded="1" name="Project settings" />
+        <property expanded="0" name="Window Size" />
+        <property expanded="1" name="Configuration Settings" />
+    </properties>
+    <families-expanded root="1" />
+    <folders-expanded>
+        <folder expanded="1" path="object-folder/" />
+        <folder expanded="1" path="layout-folder/" />
+        <folder expanded="1" path="event-folder/" />
+        <folder expanded="1" path="file-folder/" />
+        <folder expanded="1" path="sound-folder/" />
+        <folder expanded="1" path="music-folder/" />
+        <folder expanded="0" path="file-folder/Icons/" />
+        <folder expanded="1" path="animation-folder/Object_Hanuman/" />
+        <folder expanded="1" path="animation-folder/Object_Invinsibel/" />
+        <folder expanded="1" path="animation-folder/Temple/" />
+        <folder expanded="1" path="animation-folder/Object_Arrow/" />
+        <folder expanded="1" path="animation-folder/Button_Restart/" />
+        <folder expanded="1" path="animation-folder/Button_Start/" />
+        <folder expanded="1" path="animation-folder/Button_play/" />
+        <folder expanded="1" path="animation-folder/Button_shop/" />
+        <folder expanded="1" path="animation-folder/Button_about/" />
+        <folder expanded="1" path="animation-folder/WindowCopy_/" />
+        <folder expanded="1" path="animation-folder/WindowCopy_2/" />
+        <folder expanded="1" path="animation-folder/WindowCopy_3/" />
+        <folder expanded="1" path="animation-folder/Button_Buy/" />
+        <folder expanded="1" path="animation-folder/Button_2/" />
+        <folder expanded="1" path="animation-folder/Button_3/" />
+        <folder expanded="1" path="animation-folder/dollar/" />
+        <folder expanded="1" path="animation-folder/WindowCopy_4/" />
+        <folder expanded="1" path="animation-folder/WindowCopy_5/" />
+        <folder expanded="1" path="animation-folder/Button_/" />
+        <folder expanded="1" path="animation-folder/Button_4/" />
+        <folder expanded="1" path="animation-folder/Button_5/" />
+        <folder expanded="1" path="animation-folder/gameover/" />
+        <folder expanded="1" path="animation-folder/Window/" />
+        <folder expanded="1" path="animation-folder/Button_6/" />
+        <folder expanded="1" path="animation-folder/Button_7/" />
+        <folder expanded="1" path="animation-folder/Button_8/" />
+        <folder expanded="1" path="animation-folder/Button_9/" />
+        <folder expanded="1" path="animation-folder/Button_10/" />
+        <folder expanded="1" path="animation-folder/Button_11/" />
+        <folder expanded="1" path="animation-folder/instagramlogospngimagesfreedownload/" />
+        <folder expanded="1" path="animation-folder/Button_12/" />
+        <folder expanded="1" path="animation-folder/blueinstagramlogoiconpngimageshd/" />
+        <folder expanded="1" path="animation-folder/images/" />
+        <folder expanded="1" path="animation-folder/WindowCopy_6/" />
+        <folder expanded="1" path="animation-folder/WindowCopy_7/" />
+        <folder expanded="1" path="animation-folder/WindowCopy_8/" />
+        <folder expanded="1" path="animation-folder/download/" />
+        <folder expanded="1" path="animation-folder/pngtransparentcomputericonsindexfingerutamawebothershandcomputerprogramblack/" />
+        <folder expanded="1" path="animation-folder/images2/" />
+        <folder expanded="1" path="animation-folder/clickcursorfingerhandpresstapicon/" />
+        <folder expanded="1" path="animation-folder/pointerfingerclipart/" />
+        <folder expanded="1" path="animation-folder/handcliparttouchpencilcolorhandcliparttouch/" />
+        <folder expanded="1" path="animation-folder/Button_13/" />
+        <folder expanded="1" path="animation-folder/mousecursorsvgpngicondownload/" />
+        <folder expanded="1" path="animation-folder/captainamericalogo/" />
+    </folders-expanded>
+</c2uistate>

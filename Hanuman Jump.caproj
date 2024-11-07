@@ -1,0 +1,1046 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2project>
+    <name>Hanuman Jump</name>
+    <description></description>
+    <version>1.0.0.0</version>
+    <author></author>
+    <author-email></author-email>
+    <author-website>http://</author-website>
+    <app-id>com.mycompany.myapp</app-id>
+    <unique-id>13a2yun1nq8li</unique-id>
+    <saved-with-version>27900</saved-with-version>
+    <used-plugins>
+        <plugin author="Scirra" id="Audio" version="1">Audio</plugin>
+        <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
+        <plugin author="Scirra" id="LocalStorage" version="1">Local storage</plugin>
+        <plugin author="Scirra" id="Mouse" version="1">Mouse</plugin>
+        <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
+        <plugin author="Scirra" id="Text" version="1">Text</plugin>
+        <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
+        <plugin author="Scirra" id="Touch" version="1">Touch</plugin>
+    </used-plugins>
+    <used-behaviors>
+        <behavior author="Scirra" id="Platform" version="1">Platform</behavior>
+        <behavior author="Scirra" id="solid" version="1">Solid</behavior>
+    </used-behaviors>
+    <used-effects />
+    <configurations>
+        <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
+    </configurations>
+    <window-size>
+        <width>854</width>
+        <height>480</height>
+    </window-size>
+    <pixel-rounding>0</pixel-rounding>
+    <preview-effects>1</preview-effects>
+    <first-layout>Layout_Start</first-layout>
+    <use-loader-layout>0</use-loader-layout>
+    <configuration-settings>
+        <prop name="Clear background">Yes</prop>
+        <prop name="Downscaling">Medium quality</prop>
+        <prop name="Enable WebGL">On</prop>
+        <prop name="Fullscreen in browser">Letterbox scale</prop>
+        <prop name="Fullscreen scaling">High quality</prop>
+        <prop name="Loader style">Construct 2 splash</prop>
+        <prop name="Orientations">Any</prop>
+        <prop name="Pause on unfocus">No</prop>
+        <prop name="Physics engine">Box2D asm.js</prop>
+        <prop name="Preload sounds">Yes</prop>
+        <prop name="Preview browser">(default)</prop>
+        <prop name="Sampling">Linear</prop>
+        <prop name="Use high-DPI display">Yes</prop>
+    </configuration-settings>
+    <object-folder>
+        <object-type name="Object_Hanuman" sid="427882533232469">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Platform" sid="986236261263268">
+                    <behavior id="Platform" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="2" loop="1" name="Run" pingpong="0" repeatcount="1" repeatto="0" sid="294804145572913" speed="8">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.501629" original-source="C:\Users\ACER\Downloads\Run 2.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.501629" original-source="C:\Users\ACER\Downloads\Run 1.png" />
+                </animation>
+                <animation framecount="1" loop="0" name="Jump" pingpong="0" repeatcount="1" repeatto="0" sid="130332417297615" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.501629" original-source="C:\Users\ACER\Downloads\Jump.png" />
+                </animation>
+                <animation framecount="1" loop="0" name="Collision" pingpong="0" repeatcount="1" repeatto="0" sid="820966878622599" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.501629" original-source="C:\Users\ACER\Downloads\Coll.png">
+                        <collision-poly>
+                            <point x="0.168539" y="0.19544" />
+                            <point x="0.5" y="0.00977199" />
+                            <point x="0.859551" y="0.162866" />
+                            <point x="0.983146" y="0.498371" />
+                            <point x="0.803371" y="0.771987" />
+                            <point x="0.5" y="0.899023" />
+                            <point x="0.210674" y="0.7557" />
+                            <point x="0.011236" y="0.498371" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="Sit" pingpong="0" repeatcount="1" repeatto="0" sid="617335034588207" speed="5">
+                    <frame duration="1" hotspotX="0.503597" hotspotY="0.5" original-source="C:\Users\ACER\Downloads\Stand.png">
+                        <collision-poly>
+                            <point x="0.170391" y="0.197411" />
+                            <point x="0.5" y="0.012945" />
+                            <point x="0.857542" y="0.165049" />
+                            <point x="0.980447" y="0.498382" />
+                            <point x="0.801676" y="0.770227" />
+                            <point x="0.5" y="0.89644" />
+                            <point x="0.21229" y="0.754045" />
+                            <point x="0.0139665" y="0.498382" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Object_Floor" sid="846532536028106">
+            <plugin id="TiledBg" />
+            <behaviors>
+                <behavior-type name="Solid" sid="932846141960735">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <texture original-source="C:\Users\ACER\Downloads\Tile Fix.png" />
+        </object-type>
+        <object-type name="Object_Mouse" sid="894515698029471">
+            <plugin id="Mouse" />
+        </object-type>
+        <object-type name="Object_Keyboard" sid="959423042471339">
+            <plugin id="Keyboard" />
+        </object-type>
+        <object-type name="Object_Grass" sid="725148945909807">
+            <plugin id="TiledBg" />
+            <texture original-source="C:\Users\ACER\Downloads\Tile Grass.png" />
+        </object-type>
+        <object-type name="Object_Backgound" sid="129194171307944">
+            <plugin id="TiledBg" />
+            <texture original-source="C:\Users\ACER\Downloads\back 1,5k P.png" />
+        </object-type>
+        <object-type name="Object_Audio" sid="455718890802170">
+            <plugin id="Audio" />
+        </object-type>
+        <object-type name="Object_Invinsibel" sid="983190399973337">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="497203212471492">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="704164169208087" speed="5">
+                    <frame duration="1" hotspotX="7.73333" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Temple" sid="537979000135827">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Dua" pingpong="0" repeatcount="1" repeatto="0" sid="701118336990761" speed="5">
+                    <frame duration="1" hotspotX="0.501408" hotspotY="0.5" original-source="C:\Users\ACER\Downloads\Tree2.png">
+                        <collision-poly>
+                            <point x="0.180282" y="0.230216" />
+                            <point x="0.819718" y="0.230216" />
+                            <point x="0.957747" y="0.946043" />
+                            <point x="0.0394366" y="0.94964" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="Satu" pingpong="0" repeatcount="1" repeatto="0" sid="651228872504843" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\ACER\Downloads\TreeSatu.png">
+                        <collision-poly>
+                            <point x="0.362007" y="0.229025" />
+                            <point x="0.498208" y="0" />
+                            <point x="0.634409" y="0.231293" />
+                            <point x="0.917563" y="0.947846" />
+                            <point x="0.498208" y="0.997732" />
+                            <point x="0.0824373" y="0.947846" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="DuaDua" pingpong="0" repeatcount="1" repeatto="0" sid="384664262792335" speed="5">
+                    <frame duration="1" hotspotX="0.501961" hotspotY="0.5" original-source="C:\Users\ACER\Downloads\Tree2Dua.png">
+                        <collision-poly>
+                            <point x="0.180282" y="0.230216" />
+                            <point x="0.819718" y="0.230216" />
+                            <point x="0.957747" y="0.946043" />
+                            <point x="0.0394366" y="0.94964" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="SatuDua" pingpong="0" repeatcount="1" repeatto="0" sid="478347921396651" speed="5">
+                    <frame duration="1" hotspotX="0.505682" hotspotY="0.5" original-source="C:\Users\ACER\Downloads\TreeSatu.png">
+                        <collision-poly>
+                            <point x="0.362007" y="0.229025" />
+                            <point x="0.498208" y="0" />
+                            <point x="0.634409" y="0.231293" />
+                            <point x="0.917563" y="0.947846" />
+                            <point x="0.498208" y="0.997732" />
+                            <point x="0.0824373" y="0.947846" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="Tiga" pingpong="0" repeatcount="1" repeatto="0" sid="205599643926706" speed="5">
+                    <frame duration="1" hotspotX="0.501408" hotspotY="0.5" original-source="C:\Users\ACER\Downloads\Tree3.png">
+                        <collision-poly>
+                            <point x="0.180282" y="0.230216" />
+                            <point x="0.498592" y="0.28777" />
+                            <point x="0.819718" y="0.230216" />
+                            <point x="0.957747" y="0.946043" />
+                            <point x="0.498592" y="1" />
+                            <point x="0.0394366" y="0.94964" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="DuaTiga" pingpong="0" repeatcount="1" repeatto="0" sid="611603798523356" speed="5">
+                    <frame duration="1" hotspotX="0.502146" hotspotY="0.5" original-source="C:\Users\ACER\Downloads\Three3Dua.png">
+                        <collision-poly>
+                            <point x="0.480687" y="0.402878" />
+                            <point x="0.497854" y="0.28777" />
+                            <point x="0.725322" y="0.230216" />
+                            <point x="0.935622" y="0.946043" />
+                            <point x="0.497854" y="1" />
+                            <point x="0.0472103" y="0.960432" />
+                            <point x="0.188841" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Object_Arrow" sid="885023193878098">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="483504264797458" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\ACER\Downloads\Arrow.png">
+                        <collision-poly>
+                            <point x="0.03" y="0.3125" />
+                            <point x="0.5" y="0.364583" />
+                            <point x="0.995" y="0.0520833" />
+                            <point x="0.964" y="0.5" />
+                            <point x="0.997" y="0.96875" />
+                            <point x="0.5" y="0.666667" />
+                            <point x="0.031" y="0.677083" />
+                            <point x="0.001" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Button_Restart" sid="687946915970418">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="461569423157692" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.500499" original-source="C:\Users\ACER\Downloads\Restart.png">
+                        <collision-poly>
+                            <point x="0.148" y="0.147852" />
+                            <point x="0.5" y="0.844156" />
+                            <point x="0.852" y="0.147852" />
+                            <point x="1" y="0.499501" />
+                            <point x="0.853" y="0.853147" />
+                            <point x="0.5" y="1" />
+                            <point x="0.147" y="0.853147" />
+                            <point x="0" y="0.499501" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Text_ScoreValue" sid="494970679617866">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Text_Score" sid="798209227415241">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Text_Record" sid="409306851109837">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Object_LocalStorage" sid="531444569877919">
+            <plugin id="LocalStorage" />
+        </object-type>
+        <object-type name="Text_RecordValue" sid="810643955998299">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Button_Start" sid="641089398825380">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="642001738117966" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\ACER\Downloads\video-play-button.png">
+                        <collision-poly>
+                            <point x="0.148" y="0.147852" />
+                            <point x="0.5" y="0.844156" />
+                            <point x="0.852" y="0.147852" />
+                            <point x="1" y="0.499501" />
+                            <point x="0.853" y="0.853147" />
+                            <point x="0.5" y="1" />
+                            <point x="0.147" y="0.853147" />
+                            <point x="0" y="0.499501" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Button_play" sid="612895177135555">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="524344466050722" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\HP\Desktop\Semester 6\Teknologi Game\Praktikum\Platformer\GUI\gui\button\Button_13.png">
+                        <collision-poly>
+                            <point x="0.0327103" y="0.0729167" />
+                            <point x="0.5" y="0.0104167" />
+                            <point x="0.962617" y="0.0833333" />
+                            <point x="0.990654" y="0.5" />
+                            <point x="0.953271" y="0.895833" />
+                            <point x="0.5" y="0.947917" />
+                            <point x="0.0373832" y="0.916667" />
+                            <point x="0.0046729" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Button_shop" sid="784864766403004">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="523712418073926" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\HP\Desktop\Semester 6\Teknologi Game\Praktikum\Platformer\GUI\gui\button\Button_13.png">
+                        <collision-poly>
+                            <point x="0.0327103" y="0.0729167" />
+                            <point x="0.5" y="0.0104167" />
+                            <point x="0.962617" y="0.0833333" />
+                            <point x="0.990654" y="0.5" />
+                            <point x="0.953271" y="0.895833" />
+                            <point x="0.5" y="0.947917" />
+                            <point x="0.0373832" y="0.916667" />
+                            <point x="0.0046729" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Text" sid="532716940203052">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Button_about" sid="132486285941499">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="374334281740722" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\HP\Desktop\Semester 6\Teknologi Game\Praktikum\Platformer\GUI\gui\button\Button_13.png">
+                        <collision-poly>
+                            <point x="0.0327103" y="0.0729167" />
+                            <point x="0.5" y="0.0104167" />
+                            <point x="0.962617" y="0.0833333" />
+                            <point x="0.990654" y="0.5" />
+                            <point x="0.953271" y="0.895833" />
+                            <point x="0.5" y="0.947917" />
+                            <point x="0.0373832" y="0.916667" />
+                            <point x="0.0046729" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Touch" sid="148617659777810">
+            <plugin id="Touch" />
+        </object-type>
+        <object-type name="WindowCopy_" sid="653003508393374">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="218380797903300" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.506849" original-source="C:\Users\HP\Desktop\Semester 6\Teknologi Game\Praktikum\Platformer\GUI\gui\widow\Window - Copy_42.png">
+                        <collision-poly>
+                            <point x="0.0445545" y="0.123288" />
+                            <point x="0.5" y="0.0958904" />
+                            <point x="0.965347" y="0.0958904" />
+                            <point x="0.990099" y="0.493151" />
+                            <point x="0.975248" y="0.931507" />
+                            <point x="0.5" y="0.945205" />
+                            <point x="0.0544554" y="0.849315" />
+                            <point x="0.039604" y="0.493151" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="WindowCopy_2" sid="848875527486109">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="409055922772393" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.501639" original-source="C:\Users\HP\Desktop\Semester 6\Teknologi Game\Praktikum\Platformer\GUI\gui\widow\Window - Copy_10.png">
+                        <collision-poly>
+                            <point x="0.011194" y="0.0196721" />
+                            <point x="0.5" y="0.00327869" />
+                            <point x="0.990672" y="0.0163934" />
+                            <point x="0.990672" y="0.983607" />
+                            <point x="0.5" y="1" />
+                            <point x="0.00932836" y="0.983607" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="WindowCopy_3" sid="999552964843677">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="522964389319622" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\HP\Desktop\Semester 6\Teknologi Game\Praktikum\Platformer\GUI\gui\widow\Window - Copy_24.png">
+                        <collision-poly>
+                            <point x="0.0833333" y="0.06" />
+                            <point x="0.5" y="0" />
+                            <point x="0.916667" y="0.06" />
+                            <point x="0.982323" y="0.5" />
+                            <point x="0.972222" y="0.98" />
+                            <point x="0.0252525" y="0.981818" />
+                            <point x="0.010101" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Button_Buy" sid="194869300705308">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="458351333191387" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\HP\Desktop\Semester 6\Teknologi Game\Praktikum\Platformer\GUI\gui\button\Button_13.png">
+                        <collision-poly>
+                            <point x="0.0327103" y="0.0729167" />
+                            <point x="0.5" y="0.0104167" />
+                            <point x="0.962617" y="0.0833333" />
+                            <point x="0.990654" y="0.5" />
+                            <point x="0.953271" y="0.895833" />
+                            <point x="0.5" y="0.947917" />
+                            <point x="0.0373832" y="0.916667" />
+                            <point x="0.0046729" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Button_2" sid="227387145934418">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="825016710994720" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\HP\Desktop\Semester 6\Teknologi Game\Praktikum\Platformer\GUI\gui\button\Button_23.png">
+                        <collision-poly>
+                            <point x="0.076087" y="0.0729167" />
+                            <point x="0.5" y="0.0104167" />
+                            <point x="0.913043" y="0.0833333" />
+                            <point x="0.967391" y="0.5" />
+                            <point x="0.891304" y="0.895833" />
+                            <point x="0.5" y="0.947917" />
+                            <point x="0.0869565" y="0.916667" />
+                            <point x="0.0108696" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Button_3" sid="502489303407500">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="293836574437874" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.494624" original-source="C:\Users\HP\Desktop\Semester 6\Teknologi Game\Praktikum\Platformer\GUI\gui\button\Button_25.png">
+                        <collision-poly>
+                            <point x="0.0729167" y="0.924731" />
+                            <point x="0.0104167" y="0.505376" />
+                            <point x="0.09375" y="0.0967742" />
+                            <point x="0.5" y="0.0322581" />
+                            <point x="0.895833" y="0.107527" />
+                            <point x="0.947917" y="0.505376" />
+                            <point x="0.90625" y="0.903226" />
+                            <point x="0.5" y="0.989247" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="dollar" sid="411180208858417">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="942156985715543" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.505747" original-source="C:\Users\HP\Desktop\Semester 6\Teknologi Game\Praktikum\Platformer\GUI\gui\widow\Window - Copy_74.png">
+                        <collision-poly>
+                            <point x="0.166667" y="0.114943" />
+                            <point x="0.5" y="0.0114943" />
+                            <point x="0.833333" y="0.114943" />
+                            <point x="0.966667" y="0.494253" />
+                            <point x="0.75" y="0.827586" />
+                            <point x="0.5" y="0.954023" />
+                            <point x="0.25" y="0.827586" />
+                            <point x="0.15" y="0.494253" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Text2" sid="133763625348544">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="WindowCopy_4" sid="955881815092527">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="931089105730074" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.505747" original-source="C:\Users\HP\Desktop\Semester 6\Teknologi Game\Praktikum\Platformer\GUI\gui\widow\Window - Copy_74.png">
+                        <collision-poly>
+                            <point x="0.166667" y="0.114943" />
+                            <point x="0.5" y="0.0114943" />
+                            <point x="0.833333" y="0.114943" />
+                            <point x="0.966667" y="0.494253" />
+                            <point x="0.75" y="0.827586" />
+                            <point x="0.5" y="0.954023" />
+                            <point x="0.25" y="0.827586" />
+                            <point x="0.15" y="0.494253" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Text3" sid="946832339555105">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Textdollar" sid="269782838934574">
+            <plugin id="Text" />
+            <instance-variables>
+                <instance-variable name="type" sid="532129077811395" type="string" />
+            </instance-variables>
+        </object-type>
+        <object-type name="WindowCopy_5" sid="139584685575732">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="345445969889079" speed="5">
+                    <frame duration="1" hotspotX="0.500829" hotspotY="0.501035" original-source="C:\Users\HP\Desktop\Semester 6\Teknologi Game\Praktikum\Platformer\GUI\gui\widow\Window - Copy_06.png">
+                        <collision-poly>
+                            <point x="0.0945274" y="0.118012" />
+                            <point x="0.499171" y="0" />
+                            <point x="0.905473" y="0.118012" />
+                            <point x="0.99005" y="0.498965" />
+                            <point x="0.980099" y="0.975155" />
+                            <point x="0.0149254" y="0.981366" />
+                            <point x="0" y="0.498965" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="TiledBackground6" sid="347327423220212">
+            <plugin id="TiledBg" />
+            <texture />
+        </object-type>
+        <object-type name="Button_" sid="888167187553098">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="125466593643517" speed="5">
+                    <frame duration="1" hotspotX="0.505376" hotspotY="0.5" original-source="C:\Users\HP\Desktop\Semester 6\Teknologi Game\Praktikum\Platformer\GUI\gui\button\Button_50.png">
+                        <collision-poly>
+                            <point x="0.0752688" y="0.0729167" />
+                            <point x="0.494624" y="0.0104167" />
+                            <point x="0.903226" y="0.09375" />
+                            <point x="0.967742" y="0.5" />
+                            <point x="0.892473" y="0.895833" />
+                            <point x="0.494624" y="0.947917" />
+                            <point x="0.0967742" y="0.90625" />
+                            <point x="0.0107527" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Button_4" sid="844760465809139">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="346423041662903" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\HP\Desktop\Semester 6\Teknologi Game\Praktikum\Platformer\GUI\gui\button\Button_09.png">
+                        <collision-poly>
+                            <point x="0.076087" y="0.0729167" />
+                            <point x="0.5" y="0" />
+                            <point x="0.913043" y="0.0833333" />
+                            <point x="0.978261" y="0.5" />
+                            <point x="0.891304" y="0.895833" />
+                            <point x="0.5" y="0.947917" />
+                            <point x="0.0978261" y="0.90625" />
+                            <point x="0.0108696" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Button_5" sid="999398789195614">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="346762542809843" speed="5">
+                    <frame duration="1" hotspotX="0.505376" hotspotY="0.5" original-source="C:\Users\HP\Desktop\Semester 6\Teknologi Game\Praktikum\Platformer\GUI\gui\button\Button_98.png">
+                        <collision-poly>
+                            <point x="0.0752688" y="0.0729167" />
+                            <point x="0.494624" y="0.0104167" />
+                            <point x="0.903226" y="0.09375" />
+                            <point x="0.967742" y="0.5" />
+                            <point x="0.892473" y="0.895833" />
+                            <point x="0.494624" y="0.947917" />
+                            <point x="0.0967742" y="0.90625" />
+                            <point x="0.0107527" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="gameover" sid="345428319237883">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="114695759222692" speed="5">
+                    <frame duration="1" hotspotX="0.501089" hotspotY="0.5" original-source="C:\Users\HP\Desktop\Semester 6\Teknologi Game\Praktikum\Platformer\GUI\gameover.png">
+                        <collision-poly>
+                            <point x="0.0827887" y="0.311475" />
+                            <point x="0.498911" y="0.00819672" />
+                            <point x="0.917211" y="0.311475" />
+                            <point x="0.923747" y="0.5" />
+                            <point x="0.954248" y="0.827869" />
+                            <point x="0.498911" y="0.606557" />
+                            <point x="0.043573" y="0.836066" />
+                            <point x="0.0784314" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Window" sid="866676625594440">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="544669762682994" speed="5">
+                    <frame duration="1" hotspotX="0.500829" hotspotY="0.501171" original-source="C:\Users\HP\Desktop\Semester 6\Teknologi Game\Praktikum\Platformer\GUI\Window.png">
+                        <collision-poly>
+                            <point x="0.0116086" y="0.0163934" />
+                            <point x="0.499171" y="0.00234192" />
+                            <point x="0.985075" y="0.0210773" />
+                            <point x="0.980099" y="0.971897" />
+                            <point x="0.0165837" y="0.976581" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Button_6" sid="176133664761432">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="267058687115253" speed="5">
+                    <frame duration="1" hotspotX="0.502732" hotspotY="0.5" original-source="C:\Users\HP\Desktop\Semester 6\Teknologi Game\Praktikum\Platformer\GUI\gui\button 2\Button_13.png">
+                        <collision-poly>
+                            <point x="0.0710383" y="0.0684211" />
+                            <point x="0.497268" y="0" />
+                            <point x="0.912568" y="0.0842105" />
+                            <point x="0.972678" y="0.5" />
+                            <point x="0.896175" y="0.9" />
+                            <point x="0.497268" y="0.952632" />
+                            <point x="0.0874317" y="0.915789" />
+                            <point x="0.00546448" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Button_7" sid="975643189342252">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="718648005974055" speed="5">
+                    <frame duration="1" hotspotX="0.505376" hotspotY="0.5" original-source="C:\Users\HP\Desktop\Semester 6\Teknologi Game\Praktikum\Platformer\GUI\gui\button\Button_98.png">
+                        <collision-poly>
+                            <point x="0.0752688" y="0.0729167" />
+                            <point x="0.494624" y="0.0104167" />
+                            <point x="0.903226" y="0.09375" />
+                            <point x="0.967742" y="0.5" />
+                            <point x="0.892473" y="0.895833" />
+                            <point x="0.494624" y="0.947917" />
+                            <point x="0.0967742" y="0.90625" />
+                            <point x="0.0107527" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Button_8" sid="297623433054963">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="445077562974466" speed="5">
+                    <frame duration="1" hotspotX="0.505376" hotspotY="0.5" original-source="C:\Users\HP\Desktop\Semester 6\Teknologi Game\Praktikum\Platformer\GUI\gui\button\Button_66.png">
+                        <collision-poly>
+                            <point x="0.0752688" y="0.0729167" />
+                            <point x="0.494624" y="0.0104167" />
+                            <point x="0.903226" y="0.09375" />
+                            <point x="0.967742" y="0.5" />
+                            <point x="0.892473" y="0.895833" />
+                            <point x="0.494624" y="0.947917" />
+                            <point x="0.0967742" y="0.90625" />
+                            <point x="0.0107527" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Button_9" sid="362514213253766">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="986493912369930" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\HP\Desktop\Semester 6\Teknologi Game\Praktikum\Platformer\GUI\gui\button\Button_23.png">
+                        <collision-poly>
+                            <point x="0.076087" y="0.0729167" />
+                            <point x="0.5" y="0.0104167" />
+                            <point x="0.913043" y="0.0833333" />
+                            <point x="0.967391" y="0.5" />
+                            <point x="0.891304" y="0.895833" />
+                            <point x="0.5" y="0.947917" />
+                            <point x="0.0869565" y="0.916667" />
+                            <point x="0.0108696" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Button_10" sid="805287211585133">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="359397927166885" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\HP\Desktop\Semester 6\Teknologi Game\Praktikum\Platformer\GUI\gui\button\Button_33.png">
+                        <collision-poly>
+                            <point x="0.076087" y="0.0729167" />
+                            <point x="0.5" y="0" />
+                            <point x="0.913043" y="0.0833333" />
+                            <point x="0.967391" y="0.5" />
+                            <point x="0.891304" y="0.895833" />
+                            <point x="0.5" y="0.947917" />
+                            <point x="0.0978261" y="0.90625" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Button_11" sid="374163500578223">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="370165802191895" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\HP\Desktop\Semester 6\Teknologi Game\Praktikum\Platformer\GUI\gui\button\Button_58.png">
+                        <collision-poly>
+                            <point x="0.076087" y="0.0729167" />
+                            <point x="0.5" y="0.0104167" />
+                            <point x="0.913043" y="0.0833333" />
+                            <point x="0.978261" y="0.5" />
+                            <point x="0.891304" y="0.895833" />
+                            <point x="0.5" y="0.947917" />
+                            <point x="0.0978261" y="0.90625" />
+                            <point x="0.0108696" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="instagramlogospngimagesfreedownload" sid="805936449815825">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="241847988064288" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\HP\Desktop\instagram-logos-png-images-free-download-2.png">
+                        <collision-poly>
+                            <point x="0.106" y="0.106" />
+                            <point x="0.5" y="0.051" />
+                            <point x="0.882" y="0.118" />
+                            <point x="0.93" y="0.5" />
+                            <point x="0.876" y="0.876" />
+                            <point x="0.5" y="0.938" />
+                            <point x="0.111" y="0.889" />
+                            <point x="0.044" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Button_12" sid="104738609773183">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="401453183198873" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\HP\Desktop\Semester 6\Teknologi Game\Praktikum\Platformer\GUI\gui\button\Button_90.png">
+                        <collision-poly>
+                            <point x="0.076087" y="0.0729167" />
+                            <point x="0.5" y="0.0104167" />
+                            <point x="0.913043" y="0.0833333" />
+                            <point x="0.978261" y="0.5" />
+                            <point x="0.891304" y="0.895833" />
+                            <point x="0.5" y="0.947917" />
+                            <point x="0.0978261" y="0.90625" />
+                            <point x="0.0108696" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="blueinstagramlogoiconpngimageshd" sid="632206043269943">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="270036076896863" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\HP\Desktop\blue-instagram-logo-icon-png-images-hd-13.png">
+                        <collision-poly>
+                            <point x="0.123047" y="0.123047" />
+                            <point x="0.5" y="0.0839844" />
+                            <point x="0.873047" y="0.126953" />
+                            <point x="0.929688" y="0.5" />
+                            <point x="0.892578" y="0.892578" />
+                            <point x="0.5" y="0.955078" />
+                            <point x="0.101563" y="0.898438" />
+                            <point x="0.0605469" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="images" sid="851729039567175">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="485219798190754" speed="5">
+                    <frame duration="1" hotspotX="0.501618" hotspotY="0.503067" original-source="C:\Users\HP\Desktop\images.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Text4" sid="766278480247549">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="WindowCopy_6" sid="179082250593564">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="293556081990732" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\HP\Desktop\Semester 6\Teknologi Game\Praktikum\Platformer\GUI\gui\widow\Window - Copy_18.png">
+                        <collision-poly>
+                            <point x="0.0776892" y="0.0965347" />
+                            <point x="0.5" y="0.00247525" />
+                            <point x="0.918327" y="0.101485" />
+                            <point x="0.988048" y="0.5" />
+                            <point x="0.976096" y="0.970297" />
+                            <point x="0.0199203" y="0.975248" />
+                            <point x="0.00199203" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="WindowCopy_7" sid="496756116950720">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="287461637924667" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.501639" original-source="C:\Users\HP\Desktop\Semester 6\Teknologi Game\Praktikum\Platformer\GUI\gui\widow\Window - Copy_10.png">
+                        <collision-poly>
+                            <point x="0.011194" y="0.0196721" />
+                            <point x="0.5" y="0.00327869" />
+                            <point x="0.990672" y="0.0163934" />
+                            <point x="0.990672" y="0.983607" />
+                            <point x="0.5" y="1" />
+                            <point x="0.00932836" y="0.983607" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="WindowCopy_8" sid="807362774437995">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="359826521613866" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.504132" original-source="C:\Users\HP\Desktop\Semester 6\Teknologi Game\Praktikum\Platformer\GUI\gui\widow\Window - Copy_04.png">
+                        <collision-poly>
+                            <point x="0.0829694" y="0.31405" />
+                            <point x="0.5" y="0" />
+                            <point x="0.917031" y="0.31405" />
+                            <point x="0.956332" y="0.834711" />
+                            <point x="0.5" y="0.61157" />
+                            <point x="0.0414847" y="0.842975" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="download" sid="132798283452015">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="725590242675475" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\HP\Desktop\download.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="pngtransparentcomputericonsindexfingerutamawebothershandcomputerprogramblack" sid="821867398550145">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="137560854307786" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\HP\Desktop\png-transparent-computer-icons-index-finger-utamaweb-others-hand-computer-program-black.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="images2" sid="947467847620188">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="324417118047038" speed="5">
+                    <frame duration="1" hotspotX="0.502222" hotspotY="0.502222" original-source="C:\Users\HP\Desktop\images.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="clickcursorfingerhandpresstapicon" sid="253471594240485">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="628827298869593" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\HP\Desktop\click-cursor-finger-hand-press-tap-icon-22.png">
+                        <collision-poly>
+                            <point x="0.25" y="0.25" />
+                            <point x="0.5" y="0.257813" />
+                            <point x="0.601563" y="0.398438" />
+                            <point x="0.785156" y="0.5" />
+                            <point x="0.763672" y="0.763672" />
+                            <point x="0.5" y="0.929688" />
+                            <point x="0.3125" y="0.6875" />
+                            <point x="0.386719" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="pointerfingerclipart" sid="303128363700939">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="682495173644550" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\HP\Desktop\pointer-finger-clipart-19.png">
+                        <collision-poly>
+                            <point x="0.254762" y="0.180135" />
+                            <point x="0.678571" y="0.227273" />
+                            <point x="1" y="0.5" />
+                            <point x="0.87381" y="0.910774" />
+                            <point x="0.5" y="0.919192" />
+                            <point x="0.257143" y="0.818182" />
+                            <point x="0.0404762" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="handcliparttouchpencilcolorhandcliparttouch" sid="624170396791763">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="539951655849252" speed="5">
+                    <frame duration="1" hotspotX="0.500143" hotspotY="0.5" original-source="C:\Users\HP\Desktop\hand-clipart-touch-pencil-color-hand-clipart-touch-15.png">
+                        <collision-poly>
+                            <point x="0.122327" y="0.104583" />
+                            <point x="0.499857" y="0.361531" />
+                            <point x="0.891075" y="0.5" />
+                            <point x="0.966923" y="0.971721" />
+                            <point x="0.499857" y="1" />
+                            <point x="0.217565" y="0.813993" />
+                            <point x="0.0359281" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Button_13" sid="421243027152589">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="727156195927344" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\HP\Desktop\Semester 6\Teknologi Game\Praktikum\Platformer\GUI\gui\button\Button_42.png">
+                        <collision-poly>
+                            <point x="0.076087" y="0.0729167" />
+                            <point x="0.5" y="0.0104167" />
+                            <point x="0.913043" y="0.0833333" />
+                            <point x="0.978261" y="0.5" />
+                            <point x="0.891304" y="0.895833" />
+                            <point x="0.5" y="0.947917" />
+                            <point x="0.0978261" y="0.90625" />
+                            <point x="0.0108696" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="mousecursorsvgpngicondownload" sid="768460242309408">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="344092409784822" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\HP\Desktop\mouse-cursor-svg-png-icon-download-24.png">
+                        <collision-poly>
+                            <point x="0.263265" y="0.263265" />
+                            <point x="0.991837" y="0.00816326" />
+                            <point x="0.736735" y="0.736735" />
+                            <point x="0.5" y="0.734694" />
+                            <point x="0.104082" y="0.895918" />
+                            <point x="0.264286" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="captainamericalogo" sid="673130384678170">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="631147088862434" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\HP\Desktop\captain-america-logo-12.png">
+                        <collision-poly>
+                            <point x="0.188571" y="0.188571" />
+                            <point x="0.5" y="0.06" />
+                            <point x="0.811429" y="0.188571" />
+                            <point x="0.94" y="0.5" />
+                            <point x="0.811429" y="0.811429" />
+                            <point x="0.5" y="0.94" />
+                            <point x="0.188571" y="0.811429" />
+                            <point x="0.06" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+    </object-folder>
+    <families />
+    <layout-folder>
+        <layout>Layout_Start.xml</layout>
+        <layout>Layout_Gameplay.xml</layout>
+        <layout>Layout_Restart.xml</layout>
+        <layout>Layout_Shop.xml</layout>
+        <layout>Layout_Guide.xml</layout>
+    </layout-folder>
+    <event-folder>
+        <event-sheet>Event_Gameplay.xml</event-sheet>
+        <event-sheet>Event_Restart.xml</event-sheet>
+        <event-sheet>Event_Start.xml</event-sheet>
+        <event-sheet>Event_Shop.xml</event-sheet>
+        <event-sheet>Event_Guide.xml</event-sheet>
+    </event-folder>
+    <global-instances>
+        <global-instance type="Object_Mouse" uid="2" />
+        <global-instance type="Object_Keyboard" uid="3" />
+        <global-instance type="Object_Audio" uid="6">
+            <properties>
+                <timescale-audio>Off</timescale-audio>
+                <saveload>All</saveload>
+                <play-in-background>No</play-in-background>
+                <positioned-audio></positioned-audio>
+                <panning-model>HRTF</panning-model>
+                <distance-model>Inverse</distance-model>
+                <listener-z-height>600</listener-z-height>
+                <reference-distance>600</reference-distance>
+                <maximum-distance>10000</maximum-distance>
+                <roll-off-factor>1</roll-off-factor>
+            </properties>
+        </global-instance>
+        <global-instance type="Object_LocalStorage" uid="19" />
+        <global-instance type="Touch" uid="28">
+            <properties>
+                <use-mouse-input>Yes</use-mouse-input>
+            </properties>
+        </global-instance>
+    </global-instances>
+    <sounds-folder>
+        <file name="Sound_Collision.ogg" />
+        <file name="Sound_Play.ogg" />
+        <file name="Sound_For.ogg" />
+    </sounds-folder>
+    <music-folder />
+    <files-folder>
+        <file-folder name="Icons">
+            <file name="icon-16.png" />
+            <file name="icon-32.png" />
+            <file name="icon-114.png" />
+            <file name="icon-128.png" />
+            <file name="icon-256.png" />
+            <file name="loading-logo.png" />
+        </file-folder>
+    </files-folder>
+</c2project>
