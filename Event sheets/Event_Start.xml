@@ -1,0 +1,230 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Event_Start</name>
+    <events>
+        <event-block sid="487594547170676">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="750235898792891" type="Object_Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">Button_play</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="580442220849362" type="System">
+                    <param id="0" name="Layout">Layout_Guide</param>
+                </action>
+                <action id="-9" name="Set value" sid="119411454268561" type="System">
+                    <param id="0" name="Variable">Score</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="0" name="Set text" sid="559150742738958" type="Text_ScoreValue">
+                    <param id="0" name="Text">0</param>
+                </action>
+                <action id="0" name="Play" sid="694424489671951" type="Object_Audio">
+                    <param id="0" name="Audio file">Sound_Play</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="412651120544848">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="987472750825682" type="Object_Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">Button_shop</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="715045684071735" type="System">
+                    <param id="0" name="Layout">Layout_Shop</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="788764510315004">
+            <conditions>
+                <condition id="7" inverted="1" name="Cursor is over object" sid="560494137384416" type="Object_Mouse">
+                    <param id="0" name="Object">Button_play</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-7" name="Set size" sid="266004784114600" type="Button_play">
+                    <param id="0" name="Width">172</param>
+                    <param id="1" name="Height">77</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="656348540353047">
+            <conditions>
+                <condition id="7" name="Cursor is over object" sid="568809792858634" type="Object_Mouse">
+                    <param id="0" name="Object">Button_play</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-7" name="Set size" sid="587305082818879" type="Button_play">
+                    <param id="0" name="Width">175</param>
+                    <param id="1" name="Height">80</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="789643081241042">
+            <conditions>
+                <condition id="7" inverted="1" name="Cursor is over object" sid="594533167485327" type="Object_Mouse">
+                    <param id="0" name="Object">Button_shop</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-7" name="Set size" sid="598950311712002" type="Button_shop">
+                    <param id="0" name="Width">172</param>
+                    <param id="1" name="Height">77</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="484446150379809">
+            <conditions>
+                <condition id="7" name="Cursor is over object" sid="257443075694928" type="Object_Mouse">
+                    <param id="0" name="Object">Button_shop</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-7" name="Set size" sid="854832966687003" type="Button_shop">
+                    <param id="0" name="Width">175</param>
+                    <param id="1" name="Height">80</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="893868529148899">
+            <conditions>
+                <condition id="7" inverted="1" name="Cursor is over object" sid="262639898221560" type="Object_Mouse">
+                    <param id="0" name="Object">Button_about</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-7" name="Set size" sid="390053188769493" type="Button_about">
+                    <param id="0" name="Width">172</param>
+                    <param id="1" name="Height">77</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="593547348061886">
+            <conditions>
+                <condition id="7" name="Cursor is over object" sid="734526290318241" type="Object_Mouse">
+                    <param id="0" name="Object">Button_about</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-7" name="Set size" sid="597567372734406" type="Button_about">
+                    <param id="0" name="Width">175</param>
+                    <param id="1" name="Height">80</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="985459778027205">
+            <conditions>
+                <condition id="7" inverted="1" name="Cursor is over object" sid="737271613888243" type="Object_Mouse">
+                    <param id="0" name="Object">Button_6</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-7" name="Set size" sid="727095137902203" type="Button_6">
+                    <param id="0" name="Width">49</param>
+                    <param id="1" name="Height">49</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="898873689961527">
+            <conditions>
+                <condition id="7" name="Cursor is over object" sid="861625476084391" type="Object_Mouse">
+                    <param id="0" name="Object">Button_6</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-7" name="Set size" sid="915657055298789" type="Button_6">
+                    <param id="0" name="Width">51</param>
+                    <param id="1" name="Height">51</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="172555960723641">
+            <conditions>
+                <condition id="7" inverted="1" name="Cursor is over object" sid="937823256900648" type="Object_Mouse">
+                    <param id="0" name="Object">Button_11</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-7" name="Set size" sid="156877324258760" type="Button_11">
+                    <param id="0" name="Width">49</param>
+                    <param id="1" name="Height">49</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="474248754521583">
+            <conditions>
+                <condition id="7" name="Cursor is over object" sid="557683910073489" type="Object_Mouse">
+                    <param id="0" name="Object">Button_11</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-7" name="Set size" sid="413775307657839" type="Button_11">
+                    <param id="0" name="Width">51</param>
+                    <param id="1" name="Height">51</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="966030037976960">
+            <conditions>
+                <condition id="7" inverted="1" name="Cursor is over object" sid="701655267492742" type="Object_Mouse">
+                    <param id="0" name="Object">Button_12</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-7" name="Set size" sid="300274712579715" type="Button_12">
+                    <param id="0" name="Width">49</param>
+                    <param id="1" name="Height">49</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="880642388302377">
+            <conditions>
+                <condition id="7" name="Cursor is over object" sid="419915326464450" type="Object_Mouse">
+                    <param id="0" name="Object">Button_12</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-7" name="Set size" sid="310027244123035" type="Button_12">
+                    <param id="0" name="Width">51</param>
+                    <param id="1" name="Height">51</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="116227573818845">
+            <conditions>
+                <condition id="7" inverted="1" name="Cursor is over object" sid="302140021547994" type="Object_Mouse">
+                    <param id="0" name="Object">Button_10</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-7" name="Set size" sid="158578936793332" type="Button_10">
+                    <param id="0" name="Width">49</param>
+                    <param id="1" name="Height">49</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="784612392660202">
+            <conditions>
+                <condition id="7" name="Cursor is over object" sid="753037975026810" type="Object_Mouse">
+                    <param id="0" name="Object">Button_10</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-7" name="Set size" sid="351990810956402" type="Button_10">
+                    <param id="0" name="Width">51</param>
+                    <param id="1" name="Height">51</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

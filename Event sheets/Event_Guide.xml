@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Event_Guide</name>
+    <events>
+        <event-block sid="734797548217346">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="397108582787889" type="System" />
+            </conditions>
+            <actions>
+                <action id="2" name="Stop" sid="680825920081909" type="Object_Hanuman" />
+            </actions>
+        </event-block>
+        <event-block sid="632419750507535">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="585822125830514" type="Object_Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">Button_13</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="939570571125735" type="System">
+                    <param id="0" name="Layout">Layout_Gameplay</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="319988470877224">
+            <conditions>
+                <condition id="7" inverted="1" name="Cursor is over object" sid="774389714878632" type="Object_Mouse">
+                    <param id="0" name="Object">Button_13</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-7" name="Set size" sid="907119343436445" type="Button_13">
+                    <param id="0" name="Width">76</param>
+                    <param id="1" name="Height">79</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="857000922995754">
+            <conditions>
+                <condition id="7" name="Cursor is over object" sid="864736226766833" type="Object_Mouse">
+                    <param id="0" name="Object">Button_13</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-7" name="Set size" sid="668467170618654" type="Button_13">
+                    <param id="0" name="Width">79</param>
+                    <param id="1" name="Height">82</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

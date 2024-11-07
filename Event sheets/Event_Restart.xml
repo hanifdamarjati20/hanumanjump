@@ -1,0 +1,164 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Event_Restart</name>
+    <events>
+        <event-block sid="161649257851034">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="664220364653834" type="System" />
+            </conditions>
+            <actions>
+                <action id="2" name="Stop" sid="977854446145654" type="Object_Hanuman" />
+                <action id="0" name="Set text" sid="854166926607559" type="Text_ScoreValue">
+                    <param id="0" name="Text">Score</param>
+                </action>
+                <action id="1" name="Get item" sid="843614116626370" type="Object_LocalStorage">
+                    <param id="0" name="Key">&quot;Record&quot;</param>
+                </action>
+                <action id="0" name="Set text" sid="760544474310244" type="Textdollar">
+                    <param id="0" name="Text">gem</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block any="1" sid="496623486287281">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="512084533483117" type="Object_Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">Button_4</param>
+                </condition>
+                <condition id="0" name="On key pressed" sid="744191674014649" type="Object_Keyboard">
+                    <param id="0" name="Key">32</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="889502356701434" type="System">
+                    <param id="0" name="Layout">Layout_Gameplay</param>
+                </action>
+                <action id="-9" name="Set value" sid="847517000442742" type="System">
+                    <param id="0" name="Variable">Score</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="0" name="Set text" sid="119431282842902" type="Text_ScoreValue">
+                    <param id="0" name="Text">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="651132546465423" type="System">
+                    <param id="0" name="Variable">gem</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block any="1" sid="220335676116869">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="833032079347142" type="Object_Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">Button_</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="148185901976614" type="System">
+                    <param id="0" name="Layout">Layout_Start</param>
+                </action>
+                <action id="-9" name="Set value" sid="226844407402644" type="System">
+                    <param id="0" name="Variable">gem</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="390133425645819">
+            <conditions>
+                <condition id="1" name="On item get" sid="655077499899762" type="Object_LocalStorage">
+                    <param id="0" name="Key">&quot;Record&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="502291530271668" type="System">
+                    <param id="0" name="Variable">Record</param>
+                    <param id="1" name="Value">Object_LocalStorage.ItemValue</param>
+                </action>
+                <action id="0" name="Set text" sid="755160925488647" type="Text_RecordValue">
+                    <param id="0" name="Text">Record</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="619435113139030">
+            <conditions>
+                <condition id="7" inverted="1" name="Cursor is over object" sid="460506851286322" type="Object_Mouse">
+                    <param id="0" name="Object">Button_</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-7" name="Set size" sid="417868672197330" type="Button_">
+                    <param id="0" name="Width">75</param>
+                    <param id="1" name="Height">75</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="117411722302898">
+            <conditions>
+                <condition id="7" name="Cursor is over object" sid="122768350160487" type="Object_Mouse">
+                    <param id="0" name="Object">Button_</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-7" name="Set size" sid="199253106232772" type="Button_">
+                    <param id="0" name="Width">77</param>
+                    <param id="1" name="Height">77</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="102403488922047">
+            <conditions>
+                <condition id="7" inverted="1" name="Cursor is over object" sid="203647293713770" type="Object_Mouse">
+                    <param id="0" name="Object">Button_4</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-7" name="Set size" sid="401399484404152" type="Button_4">
+                    <param id="0" name="Width">75</param>
+                    <param id="1" name="Height">75</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="287018501337463">
+            <conditions>
+                <condition id="7" name="Cursor is over object" sid="122460544829037" type="Object_Mouse">
+                    <param id="0" name="Object">Button_4</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-7" name="Set size" sid="983471534523130" type="Button_4">
+                    <param id="0" name="Width">77</param>
+                    <param id="1" name="Height">77</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="552638637564689">
+            <conditions>
+                <condition id="7" inverted="1" name="Cursor is over object" sid="385431665714953" type="Object_Mouse">
+                    <param id="0" name="Object">Button_5</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-7" name="Set size" sid="482866811152369" type="Button_5">
+                    <param id="0" name="Width">75</param>
+                    <param id="1" name="Height">75</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="521729119474223">
+            <conditions>
+                <condition id="7" name="Cursor is over object" sid="271956001439673" type="Object_Mouse">
+                    <param id="0" name="Object">Button_5</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-7" name="Set size" sid="404399033298038" type="Button_5">
+                    <param id="0" name="Width">77</param>
+                    <param id="1" name="Height">77</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

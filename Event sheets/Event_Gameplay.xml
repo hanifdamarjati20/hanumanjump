@@ -1,0 +1,276 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Event_Gameplay</name>
+    <events>
+        <variable constant="0" name="gem" sid="846467275096417" static="0" type="number">0</variable>
+        <variable constant="0" name="Record" sid="739964774838289" static="0" type="number">0</variable>
+        <variable constant="0" name="Score" sid="453839353778789" static="0" type="number">0</variable>
+        <variable constant="0" name="Speed" sid="244410015078111" static="0" type="number">0</variable>
+        <event-block sid="237456959851317">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="658303475884705" type="System" />
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="961183906190825" type="Object_Hanuman">
+                    <param id="0" name="Animation">&quot;Run&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="-9" name="Set value" sid="967540725044677" type="System">
+                    <param id="0" name="Variable">Speed</param>
+                    <param id="1" name="Value">3</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="767205258354809">
+            <conditions>
+                <condition id="2" name="Key is down" sid="874109155791127" type="Object_Keyboard">
+                    <param id="0" name="Key">32</param>
+                </condition>
+                <condition behavior="Platform" id="2" name="Is on floor" sid="772520946134753" type="Object_Hanuman" />
+            </conditions>
+            <actions>
+                <action behavior="Platform" id="7" name="Simulate control" sid="217803999091773" type="Object_Hanuman">
+                    <param id="0" name="Control">2</param>
+                </action>
+                <action id="4" name="Set animation" sid="260236681056017" type="Object_Hanuman">
+                    <param id="0" name="Animation">&quot;Jump&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="0" name="Play" sid="128996253267933" type="Object_Audio">
+                    <param id="0" name="Audio file">Sound_Play</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="832932509639599">
+            <conditions>
+                <condition id="3" name="On key released" sid="599532053399661" type="Object_Keyboard">
+                    <param id="0" name="Key">32</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="779258996905111" type="Object_Hanuman">
+                    <param id="0" name="Animation">&quot;Run&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="594395743464663">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="175963676214618" type="System" />
+            </conditions>
+            <actions>
+                <action id="-17" name="Move forward" sid="845046738475513" type="Object_Floor">
+                    <param id="0" name="Distance">-Speed</param>
+                </action>
+                <action id="-17" name="Move forward" sid="156487244576461" type="Object_Hanuman">
+                    <param id="0" name="Distance">Speed</param>
+                </action>
+                <action id="-17" name="Move forward" sid="215070331086602" type="Object_Grass">
+                    <param id="0" name="Distance">-Speed</param>
+                </action>
+                <action id="-17" name="Move forward" sid="314891210485184" type="Object_Backgound">
+                    <param id="0" name="Distance">-Speed</param>
+                </action>
+                <action id="-1" name="Set X" sid="394209713993788" type="Object_Hanuman">
+                    <param id="0" name="X">115</param>
+                </action>
+                <action id="-17" name="Move forward" sid="409021341773105" type="Temple">
+                    <param id="0" name="Distance">-Speed</param>
+                </action>
+                <action id="-17" name="Move forward" sid="396971178182442" type="Object_Arrow">
+                    <param id="0" name="Distance">-Speed</param>
+                </action>
+                <action id="-17" name="Move forward" sid="487248653632815" type="dollar">
+                    <param id="0" name="Distance">-Speed</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="155500083182218">
+            <conditions>
+                <condition id="2" name="Key is down" sid="960771521761286" type="Object_Keyboard">
+                    <param id="0" name="Key">40</param>
+                </condition>
+                <condition behavior="Platform" id="2" name="Is on floor" sid="456239349214541" type="Object_Hanuman" />
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="419568430622455" type="Object_Hanuman">
+                    <param id="0" name="Animation">&quot;Sit&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="487748526449082">
+            <conditions>
+                <condition id="3" name="On key released" sid="276383800313653" type="Object_Keyboard">
+                    <param id="0" name="Key">40</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="831513026977245" type="Object_Hanuman">
+                    <param id="0" name="Animation">&quot;Run&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="541260575376451">
+            <conditions>
+                <condition id="-1" name="Compare X" sid="739478755037964" type="Temple">
+                    <param id="0" name="Comparison">2</param>
+                    <param id="1" name="X co-ordinate">20</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-1" name="Set X" sid="717830486604369" type="Temple">
+                    <param id="0" name="X">860</param>
+                </action>
+                <action id="4" name="Set animation" sid="132193245288872" type="Temple">
+                    <param id="0" name="Animation">choose(&quot;Satu&quot;,&quot;Dua&quot;,&quot;SatuDua&quot;,&quot;DuaDua&quot;,&quot;Tiga&quot;,&quot;DuaTiga&quot;)</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="693447504553272">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="563425100426521" type="System">
+                    <param id="0" name="Interval (seconds)">10</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Add to" sid="260881620735870" type="System">
+                    <param id="0" name="Variable">Speed</param>
+                    <param id="1" name="Value">1.5</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="440454743117272">
+            <conditions>
+                <condition id="-8" name="Compare two values" sid="886942718365772" type="System">
+                    <param id="0" name="First value">Score</param>
+                    <param id="1" name="Comparison">4</param>
+                    <param id="2" name="Second value">Record</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="441347365215769" type="System">
+                    <param id="0" name="Variable">Record</param>
+                    <param id="1" name="Value">Score</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block any="1" sid="290781337287747">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="762713090520682" type="Object_Hanuman">
+                    <param id="0" name="Object">Temple</param>
+                </condition>
+                <condition id="0" name="On collision with another object" sid="777675642204631" type="Object_Hanuman">
+                    <param id="0" name="Object">Object_Arrow</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="448999611725514" type="System">
+                    <param id="0" name="Variable">Speed</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="0" name="Play" sid="406779114696814" type="Object_Audio">
+                    <param id="0" name="Audio file">Sound_Collision</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+                <action id="4" name="Set animation" sid="520410140163253" type="Object_Hanuman">
+                    <param id="0" name="Animation">&quot;Collision&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="0" name="Set item" sid="696335715377745" type="Object_LocalStorage">
+                    <param id="0" name="Key">&quot;Record&quot;</param>
+                    <param id="1" name="Value">Record</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="712178939495571">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="562044815411208" type="System">
+                    <param id="0" name="Interval (seconds)">random(15,20)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Create object" sid="676382586846168" type="System">
+                    <param id="0" name="Object to create">Object_Arrow</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="X">0</param>
+                    <param id="3" name="Y">0</param>
+                </action>
+                <action id="-1" name="Set X" sid="861337957725503" type="Object_Arrow">
+                    <param id="0" name="X">random(1100,1400)</param>
+                </action>
+                <action id="-2" name="Set Y" sid="120336744001114" type="Object_Arrow">
+                    <param id="0" name="Y">290+random(1,3)*20</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="571183257140352">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="334601123596714" type="System">
+                    <param id="0" name="Interval (seconds)">0.1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Add to" sid="273564925742376" type="System">
+                    <param id="0" name="Variable">Score</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="0" name="Set text" sid="439423110591269" type="Text_ScoreValue">
+                    <param id="0" name="Text">Score</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="153302260960932">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="987594260844605" type="Object_Hanuman">
+                    <param id="0" name="Object">dollar</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="136383334002188" type="dollar" />
+                <action id="-10" name="Add to" sid="349631024417776" type="System">
+                    <param id="0" name="Variable">gem</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="759287547618579">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="505443519462264" type="System" />
+            </conditions>
+            <actions />
+        </event-block>
+        <event-block sid="160455477082401">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="368850594755126" type="Textdollar">
+                    <param id="0" name="Instance variable">type</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">&quot;gem&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="283942844060454" type="Textdollar">
+                    <param id="0" name="Text">gem</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="576399433084100">
+            <conditions>
+                <condition id="15" name="On all sets complete" sid="825966902879081" type="Object_LocalStorage" />
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="650259562541547" type="System">
+                    <param id="0" name="Layout">Layout_Restart</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>
